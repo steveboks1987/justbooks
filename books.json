@@ -1011,63 +1011,6 @@
             "name": "Class8",
             "subfolders": [
                 {
-                    "name": "abc",
-                    "subfolders": [
-                        {
-                            "name": "Giáodụcthểchất",
-                            "subfolders": [
-                                {
-                                    "name": "Âmnhạc",
-                                    "subfolders": [],
-                                    "books": [
-                                        {
-                                            "title": "SGK Âm nhạc 8.pdf",
-                                            "megaLink": "https://mega.nz/file/K0oChIbI#PcAESUUl5bfzDdMKSkkJwFEcuQQkuhtNiIBHPuxpFkE"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Giáodụcthểchất",
-                                    "subfolders": [],
-                                    "books": [
-                                        {
-                                            "title": "SGK Giáo dục thể chất 8.pdf",
-                                            "megaLink": "https://mega.nz/file/rxBQXLIA#gh2hCERyaiESfM-djoyQ0gt5HHwP3RcK6xss3KTfiHs"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Hoạtđộngtrảinghiệm",
-                                    "subfolders": [],
-                                    "books": [
-                                        {
-                                            "title": "SGK Hoạt động trải nghiệm, hướng nghiệp 8.pdf",
-                                            "megaLink": "https://mega.nz/file/L15FyBja#UK3jkbrf8pe0zM7-5LMC0mTbQw8W2HHU8q3P6FhaZUk"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Mĩthuật",
-                                    "subfolders": [],
-                                    "books": [
-                                        {
-                                            "title": "SGK Mĩ thuật 8.pdf",
-                                            "megaLink": "https://mega.nz/file/r9YTia5A#4CYV5FKjZYgXn1vXqI4l5EjG5aprYLGJv3lPvK0Idvw"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "books": []
-                        }
-                    ],
-                    "books": [
-                        {
-                            "title": "ABC.zip",
-                            "megaLink": "https://mega.nz/file/fkJz3YrB#rAuUoN5PhL32L0Lgz_RwKx2M8u54WTjEx0yy8_LITZ4"
-                        }
-                    ]
-                },
-                {
                     "name": "Âmnhạc",
                     "subfolders": [],
                     "books": [
