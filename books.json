@@ -1,0 +1,60 @@
+{
+    "name": "Root",
+    "subfolders": [
+        {
+            "name": "Lap_Trinh",
+            "subfolders": [
+                {
+                    "name": "Python",
+                    "subfolders": [],
+                    "books": [
+                        {
+                            "title": "Python_Co_Ban_Den_Nang_Cao.pdf",
+                            "megaLink": "https://mega.nz/file/dummy1"
+                        },
+                        {
+                            "title": "Clean_Code_Python.pdf",
+                            "megaLink": "https://mega.nz/file/dummy2"
+                        }
+                    ]
+                },
+                {
+                    "name": "JavaScript",
+                    "subfolders": [],
+                    "books": [
+                        {
+                            "title": "Eloquent_JavaScript_3rd.epub",
+                            "megaLink": "https://mega.nz/file/dummy3"
+                        }
+                    ]
+                }
+            ],
+            "books": [
+                {
+                    "name": "Giao_Trinh_Nhap_Mon_IT.pdf",
+                    "megaLink": "https://mega.nz/file/dummy4"
+                }
+            ]
+        },
+        {
+            "name": "Tieng_Anh",
+            "subfolders": [],
+            "books": [
+                {
+                    "title": "English_Grammar_in_Use.pdf",
+                    "megaLink": "https://mega.nz/file/dummy5"
+                },
+                {
+                    "title": "IELTS_Speaking_Matasterclass.pdf",
+                    "megaLink": "https://mega.nz/file/dummy6"
+                }
+            ]
+        }
+    ],
+    "books": [
+        {
+            "title": "Gioi_Thieu_Thu_Vien.pdf",
+            "megaLink": "https://mega.nz/file/dummy7"
+        }
+    ]
+}
