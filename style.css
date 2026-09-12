@@ -224,3 +224,71 @@ h1 {
 .contact-float-btn:active {
     transform: scale(0.95);
 }
+
+/* Tự động chuyển sang Dark Mode dựa theo System/Browser Theme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    .container {
+        background: #1e1e1e;
+        color: #e0e0e0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+        color: #f1f5f9;
+    }
+
+    .search-box input {
+        background-color: #2a2a2a;
+        color: #fff;
+        border-color: #444;
+    }
+
+    .folder-header {
+        background: #2d3748;
+        color: #e2e8f0;
+    }
+
+    .folder-header:hover {
+        background: #4a5568;
+    }
+
+    .folder-meta {
+        background: #4a5568;
+        color: #cbd5e1;
+    }
+
+    .book-item {
+        background: #1e1e1e;
+        border-color: #333;
+    }
+
+    .book-title {
+        color: #e2e8f0;
+    }
+
+    .donate-content {
+        background: #1e1e1e;
+        color: #e2e8f0;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+    }
+
+    .donate-content h3, .donate-content p {
+        color: #e2e8f0;
+    }
+
+    .donate-content img {
+        border-color: #444;
+        background: #fff; /* Giữ nền trắng cho ảnh QR code dễ quét */
+    }
+
+    .wallet-box input {
+        background: #2a2a2a;
+        color: #fff;
+        border-color: #444;
+    }
+}
