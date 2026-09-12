@@ -96,3 +96,131 @@ h1 {
     padding: 2px 6px;
     border-radius: 4px;
 }
+
+/* Nút nổi (Floating Button) ở góc dưới màn hình, cực kỳ gọn gàng trên mobile */
+.receive-float-btn {
+    position: fixed;
+    bottom: 75px;/* Nằm cách đáy cao hơn nút contact (20px + chiều cao nút) */
+    right: 20px;
+    background-color: #f0b90b; /* Màu vàng nhận diện crypto/Binance */
+    color: #181a20;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.receive-float-btn:active {
+    transform: scale(0.95);
+}
+
+/* Modal tối ưu cho màn hình nhỏ */
+.donate-modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; /* Tạo khoảng thở trên mobile không bị sát viền màn hình */
+}
+
+.donate-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 360px; /* Vừa vặn trên cả màn hình điện thoại nhỏ nhất */
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    box-sizing: border-box;
+}
+
+/* Kích thước ảnh QR vừa phải, không chiếm hết màn hình điện thoại */
+.donate-content img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.wallet-box {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.wallet-box input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 11px; /* Nhỏ gọn để chứa được chuỗi ví dài */
+    background: #f8f9fa;
+}
+
+.wallet-box button {
+    padding: 8px 14px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+/* Nút Contact nổi ở góc dưới màn hình (nằm trên nút donate một chút) */
+.contact-float-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    background-color: #3498db; /* Màu xanh dương nổi bật cho contact */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.contact-float-btn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.contact-float-btn:active {
+    transform: scale(0.95);
+}

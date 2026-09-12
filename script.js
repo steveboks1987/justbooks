@@ -205,3 +205,50 @@ function filterTree(keyword) {
         updateFolderCounts(box);
     });
 }
+// Xử lý sự kiện bật/tắt Modal Receive Crypto
+document.addEventListener('DOMContentLoaded', () => {
+    // Lưu ý: Đảm bảo các ID trong index.html khớp với script này
+    const receiveBtn = document.getElementById('receive-btn');
+    const receiveModal = document.getElementById('receive-modal');
+    
+    if (receiveBtn && receiveModal) {
+        // Mở modal khi bấm nút nổi
+        receiveBtn.addEventListener('click', () => {
+            receiveModal.style.display = 'flex';
+        });
+
+        // Đóng modal khi bấm vào nút X
+        const closeBtn = receiveModal.querySelector('.close-modal');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                receiveModal.style.display = 'none';
+            });
+        }
+
+        // Đóng modal khi click vào vùng nền tối bên ngoài
+        window.addEventListener('click', (e) => {
+            if (e.target === receiveModal) {
+                receiveModal.style.display = 'none';
+            }
+        });
+    }
+});
+
+// Hàm copy địa chỉ ví nhanh kèm thông báo phản hồi
+function copyWallet(button) {
+    const input = button.previousElementSibling;
+    if (input) {
+        input.select();
+        input.setSelectionRange(0, 99999); // Hỗ trợ thiết bị di động
+        navigator.clipboard.writeText(input.value);
+        
+        const originalText = button.textContent;
+        button.textContent = "Đã copy!";
+        button.style.backgroundColor = "#27ae60"; // Đổi màu xanh báo thành công
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.style.backgroundColor = ""; // Khôi phục màu gốc
+        }, 2000);
+    }
+}

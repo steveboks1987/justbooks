@@ -9,14 +9,38 @@
 <body>
 
     <div class="container">
-        <h1>Thư Viện Sách Trực Tuyến</h1>
+        <h1>Thư Viện SGK Trực Tuyến FREE (f2026)</h1>
         
-        <!-- Ô tìm kiếm đã được thêm vào đây -->
+        <!-- Ô tìm kiếm -->
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="Nhập tên sách cần tìm (hỗ trợ có dấu và không dấu)...">
         </div>
 
         <div id="library-root">Đang tải danh sách thư viện...</div>
+    </div>
+
+    <!-- Nút Receive nổi ở góc màn hình (Tối ưu UX & Mobile) -->
+    <button id="receive-btn" class="receive-float-btn" title="Support Site">☕ Buy me ACoffe</button>
+    <a href="mailto:mutrader1987@proton.me" class="contact-float-btn" title="Contact Author">✉️ Mail to mutrader1987@proton.me</a>
+    <!-- Hộp thoại Modal ẩn chứa QR và địa chỉ ví -->
+    <div id="receive-modal" class="donate-modal" style="display: none;">
+        <div class="donate-content">
+            <span class="close-modal">&times;</span>
+            <h3>Thank you for sending an E-Coffe</h3>
+            
+            <div class="wallet-item">
+                <strong>USDT (BEP20):</strong>
+                
+                <div style="text-align: center; margin: 10px 0;">
+                    <img src="qr.jpg" alt="QR Code" style="width: 150px; height: 150px; border-radius: 4px; border: 1px solid #ddd; object-fit: contain;">
+                </div>
+
+                <div class="wallet-box">
+                    <input type="text" value="0x5b3A94c5adF2f44eD7129aC27B8045617BAa763d" readonly>
+                    <button onclick="copyWallet(this)">Copy</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
